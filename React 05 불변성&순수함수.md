@@ -79,7 +79,7 @@ export default App;
      arr.push(6); 
      return arr;
       };
-```
+
 
 
 ### React 에서 왜 순수함수를 배우냐  ? 
