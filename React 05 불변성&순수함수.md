@@ -49,6 +49,7 @@ function App() {
 export default App;
 ```
 
+## 정리  리액트에서 렌더링이되는 조건은 state 값이 바뀌면 된다
 
 ## 순수함수 
 #순수함수
