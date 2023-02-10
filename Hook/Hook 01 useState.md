@@ -43,6 +43,9 @@ const App = () => {
       <div>{number}</div>  
       <button
         onClick={() => {
+		  // 기존업데이트 방법 
+		  // 배치성의 처리된다
+		  // 배치 업데이트 아래 코드를 한꺼번에 모으기때문에 한번 만 작동한다 
           setNum(num + 1); // 첫번째 줄 
           setNum(num + 1); // 두번쨰 줄
           setNum(num + 1); // 세번째 줄
@@ -57,8 +60,8 @@ const App = () => {
 export default App;
 ```
 
-일반 업데이트 방식으로 onClick안에서 setNumber(number + 1) 를 3번 호출했습니다. 
-number 1씩 증가 한다
+React 는 배치 업데이트를 다 모아서 최종적으로 한 번만 실행을 한다
+
 
 ### 함수형 업데이트 방식
 
@@ -87,7 +90,7 @@ const App = () => {
 export default App;
 ```
 
-수형 업데이트 방식으로 동일하게 작동해볼게용 . number가 3씩 증가한다.
+버튼을 누를때마다 number state가 3씩 증가한다
 
 
 **왜 다르게 동작할까요?**
